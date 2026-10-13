@@ -1,0 +1,22 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+.DS_Store
+*.log
+
+# Python 백엔드
+backend/.venv/
+__pycache__/
+*.pyc
+
+# 로컬 SQLite DB(런타임 산출물 — 커밋 금지). 스키마는 alembic 마이그레이션으로 재현.
+backend/data/
+*.db
+*.sqlite3
+
+# 폐쇄망 패키징 산출물(대용량 바이너리 — 커밋 금지)
+packaging/offline/
+packaging/dist-bundle/
+packaging/*.tar.gz
